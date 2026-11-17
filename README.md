@@ -11,7 +11,7 @@ V neposlední řadě databáze řeší problém s údržbou a dosavadní špatno
 
 ## 2. Relační schéma
 <div style="display: flex; justify-content: center;">
-    <img src="/images/relacni_schema.png" alt="relacni_schema" width="600"/>
+    <img src="/relacni_schema.png" alt="relacni_schema" width="600"/>
 </div>
 
 ## 3. Popis tabulek
