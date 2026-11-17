@@ -16,17 +16,17 @@ V neposlední řadě databáze řeší problém s údržbou a dosavadní špatno
 
 ## 3. Popis tabulek
 
-* **`uzivatel`** – Eviduje členy rodiny a správce chalupy (jméno, příjmení, telefon, e-mail), kteří zadávají úkoly nebo vykazují spotřebu elektřiny[cite: 7].
-* **`kategorie`** – Číselník kategorií (např. *Budovy*, *Nářadí*, *Materiál*, *Palivo*) sloužící ke třídění objektů i uložených věcí[cite: 7].
-* **`objekt`** – Hlavní stavby a celky v areálu (např. *Obytná chalupa*, *Stodola*, *Studna*) včetně roku výstavby a zařazení do kategorie[cite: 7].
-* **`mistnost`** – Konkrétní místnosti a vnitřní prostory patřící pod daný objekt (např. *Dílna*, *Půda*, *Kuchyň*)[cite: 7].
-* **`vec`** – Eviduje nářadí, vybavení a spotřební materiál v konkrétních místnostech, včetně aktuálního množství a měrné jednotky (např. `ks`, `m3`, `kg`)[cite: 7].
-* **`elektromer`** – Seznam měřidel elektřiny v areálu (název a poznámka o tom, které budovy měřidlo pokrývá)[cite: 7].
-* **`uzivatel_elektromer`** – Vazební tabulka (M:N) zaznamenávající spotřebu elektřiny konkrétního uživatele na daném elektroměru k určitému datu[cite: 7].
-* **`status`** – Číselník stavů úkolu (`active`, `in_progress`, `done`, `canceled`)[cite: 7].
-* **`priorita`** – Číselník úrovní naléhavosti úkolu (`low`, `medium`, `high`)[cite: 7].
-* **`ukol`** – Sjednocená evidence plánovaných prací a deníku oprav; obsahuje zadavatele, stav, prioritu, data vytvoření/ukončení a volitelné napojení na objekt, místnost nebo věc[cite: 7].
-* **`dokumentace`** – Úložiště odkazů (URL) na manuály, video návody a revizní dokumenty napojené na konkrétní věc nebo objekt[cite: 7].
+* **`uzivatel`** – Eviduje členy rodiny a správce chalupy (jméno, příjmení, telefon, e-mail), kteří zadávají úkoly nebo vykazují spotřebu elektřiny.
+* **`kategorie`** – Číselník kategorií (např. *Budovy*, *Nářadí*, *Materiál*, *Palivo*) sloužící ke třídění objektů i uložených věcí.
+* **`objekt`** – Hlavní stavby a celky v areálu (např. *Obytná chalupa*, *Stodola*, *Studna*) včetně roku výstavby a zařazení do kategorie.
+* **`mistnost`** – Konkrétní místnosti a vnitřní prostory patřící pod daný objekt (např. *Dílna*, *Půda*, *Kuchyň*).
+* **`vec`** – Eviduje nářadí, vybavení a spotřební materiál v konkrétních místnostech, včetně aktuálního množství a měrné jednotky (např. `ks`, `m3`, `kg`).
+* **`elektromer`** – Seznam měřidel elektřiny v areálu (název a poznámka o tom, které budovy měřidlo pokrývá).
+* **`uzivatel_elektromer`** – Vazební tabulka (M:N) zaznamenávající spotřebu elektřiny konkrétního uživatele na daném elektroměru k určitému datu.
+* **`status`** – Číselník stavů úkolu (`active`, `in_progress`, `done`, `canceled`).
+* **`priorita`** – Číselník úrovní naléhavosti úkolu (`low`, `medium`, `high`).
+* **`ukol`** – Sjednocená evidence plánovaných prací a deníku oprav; obsahuje zadavatele, stav, prioritu, data vytvoření/ukončení a volitelné napojení na objekt, místnost nebo věc.
+* **`dokumentace`** – Úložiště odkazů (URL) na manuály, video návody a revizní dokumenty napojené na konkrétní věc nebo objekt.
 
 ## 4. SQL skript pro tvorbu schématu
 
